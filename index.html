@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Rozerin Aktaş - Anasayfa</title>
+  
+  <link href="assets/img/favicon.png" rel="icon">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* BEBEK MAVİSİ TEMASI */
+    :root { --nav-color: #444; --nav-hover-color: #4da6ff; --main-color: #4da6ff; } 
+    
+    .btn-get-started, .btn-more { background: #4da6ff !important; border-color: #4da6ff !important; color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 15px;}
+    .btn-get-started:hover, .btn-more:hover { background: #3395ff !important; color: white; }
+    
+    a { color: #4da6ff; text-decoration: none; }
+    a:hover { color: #3395ff; }
+    
+    .lang-switch { font-weight: bold; margin-left: 15px; color: #4da6ff; cursor: pointer; }
+    
+    .section-title h2 { color: #4da6ff; }
+    
+    .img-cover { width: 100%; height: 300px; object-fit: cover; border-radius: 8px; }
+
+    /* MENÜ AKTİF OLMA EFEKTİ */
+    .navmenu a.active { color: #4da6ff !important; position: relative; }
+    .navmenu a.active::after {
+      content: ""; position: absolute; width: 100%; height: 2px; bottom: -5px; left: 0;
+      background-color: #4da6ff; transition: width 0.3s;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Rozerin</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="nav-link active" data-target="hero">Anasayfa</a></li>
+          <li><a href="about.html" class="nav-link" data-target="about-preview">Hakkımda</a></li>
+          <li><a href="projects.html" class="nav-link" data-target="projects-preview">Projeler</a></li>
+          <li><a href="gallery.html" class="nav-link" data-target="gallery-preview">Galeri</a></li>
+          <li><a href="contact.html" class="nav-link" data-target="contact-preview">İletişim</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="index_en.html" class="lang-switch">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section id="hero" class="hero section">
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2>Merhaba, Ben Rozerin Aktaş</h2>
+            <p>Akdeniz Üniversitesi Bilgisayar Programcılığı Öğrencisi</p>
+            <a href="about.html" class="btn-get-started">Hakkımda Daha Fazlası</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-preview" class="section">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2>Hakkımda</h2>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-center">
+                <img src="assets/img/profile-img.jpg" class="img-fluid rounded-circle" style="max-width: 250px;" alt="Rozerin">
+            </div>
+            <div class="col-lg-8">
+                <h3>Tasarımcı & Yazılımcı Adayı</h3>
+                <p class="fst-italic">
+                    Merhaba, ben Rozerin. 19 yaşındayım. Moda tasarımı ve çizim yeteneklerimi yazılım dünyasıyla birleştirmeyi hedefliyorum.
+                </p>
+                <p>
+                    Antalya'da eğitim hayatıma devam ediyorum. Şu anda Akdeniz Üniversitesi'nde Bilgisayar Programcılığı okuyorum.
+                    Boş zamanlarımda fotoğraf çekmeyi ve yeni şeyler araştırmayı severim.
+                </p>
+                <a href="about.html" class="btn-more">Eğitim ve Yeteneklerimi Gör</a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="projects-preview" class="section">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2>Projelerim</h2>
+            <p>Çizimlerim ve Tasarım Çalışmalarım.</p>
+        </div>
+        <div class="row gy-4">
+            <div class="col-lg-4">
+                <img src="assets/img/portfolio/project-1.jpg" class="img-fluid img-cover" alt="">
+                <h4 class="mt-3">Moda Eskizleri</h4>
+                <p>Karakalem ve dijital moda tasarımı çizimleri.</p>
+            </div>
+            <div class="col-lg-4">
+                <img src="assets/img/portfolio/project-2.jpg" class="img-fluid img-cover" alt="">
+                <h4 class="mt-3">Photoshop Çalışması</h4>
+                <p>Dijital manipülasyon ve düzenleme.</p>
+            </div>
+            <div class="col-lg-4">
+                <img src="assets/img/portfolio/project-3.png" class="img-fluid img-cover" alt="">
+                <h4 class="mt-3">Karakter Tasarımı</h4>
+                <p>Özgün karakter çizim denemeleri.</p>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="projects.html" class="btn-more">Tüm Çalışmaları İncele</a>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="gallery-preview" class="section">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+              <h2>Galeri</h2>
+              <p>Objektifimden Antalya ve Anılar.</p>
+          </div>
+          <div class="row gy-4">
+              <div class="col-lg-4">
+                  <img src="assets/img/portfolio/gallery-1.jpg" class="img-fluid img-cover" alt="">
+              </div>
+              <div class="col-lg-4">
+                  <img src="assets/img/portfolio/gallery-2.jpg" class="img-fluid img-cover" alt="">
+              </div>
+              <div class="col-lg-4">
+                  <img src="assets/img/portfolio/gallery-3.jpg" class="img-fluid img-cover" alt="">
+              </div>
+          </div>
+          <div class="text-center mt-4">
+              <a href="gallery.html" class="btn-more">Tüm Galeriyi Gör</a>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="contact-preview" class="section">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Bana Ulaşın</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <p>Çizimlerim veya projelerim hakkında konuşmak isterseniz bana ulaşabilirsiniz.</p>
+                    <div class="d-flex justify-content-center gap-4 my-4">
+                        <div><i class="bi bi-envelope" style="color:#4da6ff;"></i> rozerin@example.com</div>
+                        <div><i class="bi bi-geo-alt" style="color:#4da6ff;"></i> Antalya, Türkiye</div>
+                    </div>
+                    <a href="contact.html" class="btn-more">İletişim Formuna Git</a>
+                </div>
+            </div>
+        </div>
+      </section>
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Rozerin</strong> <span>Tüm Hakları Saklıdır</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.navmenu ul li a');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (pageYOffset >= (sectionTop - 300)) {
+            current = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(a => {
+          a.classList.remove('active');
+          if (pageYOffset < 200 && a.getAttribute('href') === 'index.html') {
+             a.classList.add('active');
+          } else if (a.getAttribute('data-target') === current) {
+            a.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
